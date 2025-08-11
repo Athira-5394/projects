@@ -1,0 +1,22 @@
+<?php
+return array(
+	'text'				=> 'Model_Forms_Text',
+	'email'				=> 'Model_Forms_Compare_Text',
+	'text_compare'		=> 'Model_Forms_Compare_Text',
+	'label'				=> 'Model_Forms_Label',
+	'textarea'			=> 'Model_Forms_Textarea',
+	'password'			=> 'Model_Forms_Password',
+	'password_compare'	=> 'Model_Forms_Compare_Password',
+	'checkbox'			=> 'Model_Forms_Checkbox',
+	'radio'				=> 'Model_Forms_Radio',
+	'h_radio_img'		=> 'Model_Forms_Iradio',
+	'select'			=> 'Model_Forms_Selectbox',
+	'select_image'		=> 'Model_Forms_Select_Image',
+	'select_radio'		=> 'Model_Forms_Select_Radio',
+	'q_textarea'		=> 'Model_Forms_Enquete_Textarea',
+	'q_text'			=> 'Model_Forms_Enquete_Text',
+	'q_radio'			=> 'Model_Forms_Enquete_Radio',
+	'file'				=> 'Model_Forms_File',
+	'upload_image'		=> 'Model_Forms_Upload_Image',
+	'auto_zip'			=> 'Model_Forms_Postcode',
+);

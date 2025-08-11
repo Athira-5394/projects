@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+/*----------------------------------------
+ INDEX
+----------------------------------------
+01 formarea
+02 botton
+03 text
+04 注意書き
+05 文字認証
+06 input botton
+----------------------------------------*/
+
+/*----------------------------------------
+ 01 formarea
+----------------------------------------*/
+.adminarea,
+.formarea {
+	margin: 30px auto 50px;
+	width: 600px;
+}
+.adminarea dl.formheadtitle,
+.adminarea dl.formitem,
+.formarea dl.formheadtitle,
+.formarea dl.formitem {
+	margin-bottom: 1em;
+	width: 600px;
+	display: block;
+	clear: both;
+}
+.formarea dl.formitem {
+	margin-bottom: 0.5em;
+}
+
+.adminarea dl dt,
+.adminarea dl dd,
+.formarea dl dt,
+.formarea dl dd {
+	float: left;
+}
+.adminarea dl dt {
+	width: 15%;
+	font-weight: bold;
+}
+.formarea dl dt {
+	width: 25%;
+	font-weight: bold;
+}
+.adminarea dl.formheadtitle dd,
+.formarea dl.formheadtitle dd {
+	font-weight: bold;
+}
+
+/*----------------------------------------
+ 02 botton
+----------------------------------------*/
+.btn_form2set {
+	list-style-type: none;
+	width: 600px;
+	margin: 0 auto 60px;
+}
+.btn_form2set li {
+	width: 250px;
+	float: left;
+}
+.btn_form2set li a {
+	display: block;
+	padding: 15px 20px;
+	color: #ffffff;
+	letter-spacing: 2px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	background: #405878;
+	text-decoration: none;
+	/* 角丸 */
+	border-radius: 6px;        /* CSS3草案 */
+	-webkit-border-radius: 6px;    /* Safari,Google Chrome用 */
+	-moz-border-radius: 6px;   /* Firefox用 */
+}
+.btn_form2set li a:hover {
+	background: #18335e;
+}
+
+a.logout {
+	display: block;
+	float: right;
+	margin-top: -30px;
+}
+
+
+/*----------------------------------------
+ 03 text
+----------------------------------------*/
+span.formerror {
+	display: block;
+	font-size: 85.714285%;
+	color: #ff0000;
+}
+.star {
+	color: #ff0000;
+}
+
+.agree_text {
+	text-align: center;
+	color: #cd0000;
+}
+
+/*----------------------------------------
+ 04 注意書き
+----------------------------------------*/
+.formnote {
+	margin: 30px auto;
+	width: 600px;
+}
+.formnote h3 {
+	font-weight: bold;
+}
+.formagree {
+	margin: 20px 0;
+	text-align:center;
+}
+
+.formagree input#form_policy {
+	vertical-align: -2px;
+	margin-right: 3px;
+}
+
+/*----------------------------------------
+ 05 文字認証
+----------------------------------------*/
+ul.character {
+}
+ul.character li {
+	margin-bottom: 5px;
+	display: block;
+}
+ul.character li.characterimg {
+}
+
+/*----------------------------------------
+ 06 input botton
+----------------------------------------*/
+.inputbtnarea {
+	width: 600px;
+	margin: 0 auto 60px;
+}
+ul.inputbtn_1set,
+ul.inputbtn_2set,
+ul.inputbtn_3set {
+	list-style-type: none;
+}
+
+ul.inputbtn_1set {
+	width: 185px;
+	margin: 0 auto;
+}
+ul.inputbtn_2set {
+	width: 420px;
+	margin: 0 auto;
+}
+ul.inputbtn_3set {
+	width: 595px;
+	margin: 0 auto;
+}
+ul.inputbtn_2set_right {
+	width: 280px;
+	margin: 0 0 0 660px;
+}
+ul.inputbtn_1set li {
+	width:	220px;
+	float:	left;
+}
+ul.inputbtn_2set li {
+	width:	200px;
+	float:	left;
+}
+ul.inputbtn_2set_right li {
+	width: 80px;
+	float: left;
+}
+ul.inputbtn_3set li {
+	width: 185px;
+	float: left;
+}
+
+.inputbtn_1set li input,
+.inputbtn_2set li input,
+.inputbtn_3set li input,
+.inputbtn_2set_right li input {
+	cursor:pointer;
+	width: 185px;
+	display: block;
+	padding: 10px 10px;
+	color: #ffffff;
+	letter-spacing: 2px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	background: #405878;
+	text-decoration: none;
+	border: 0;
+	/* 角丸 */
+	border-radius: 3px;        /* CSS3草案 */
+	-webkit-border-radius: 3px;    /* Safari,Google Chrome用 */
+	-moz-border-radius: 3px;   /* Firefox用 */
+}
+
+.inputbtn_1set li input {
+	width: 220px;
+}
+.inputbtn_2set li input {
+	width: 200px;
+}
+.inputbtn_2set_right li input {
+	width: 80px;
+	padding: 6px 0;
+}
+
+.inputbtn_1set li input:hover,
+.inputbtn_2set li input:hover,
+.inputbtn_3set li input:hover {
+	background: #18335e;
+}
+.inputbtn_1set li input:disabled,
+.inputbtn_2set li input:disabled,
+.inputbtn_2set_right li input:disabled,
+.inputbtn_3set li input:disabled {
+	cursor: default;
+    background: #888888;
+}

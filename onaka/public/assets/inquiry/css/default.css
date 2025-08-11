@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+.form_error {
+	font-size: 10px;
+	color: blue;
+}
+.mandatory {
+	color: green;
+}
