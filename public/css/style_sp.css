@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/*-------------------------------------------
+【1】全体設定
+--------------------------------------------*/
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, canvas, details, embed, figure, figcaption, output, ruby, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+	font-size: 18px;
+	color: #333;
+	font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック", "Osaka", "Arial", "Helvetica", Sans-serif;
+	line-height: 1.6;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	color: #333;
+	font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック", "Osaka", "Arial", "Helvetica", Sans-serif;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	border: none;
+	vertical-align: bottom;
+}
+ul {
+	list-style: none;
+}
+a:link {
+	color: #333;
+}
+a:hover {
+	text-decoration: none;
+}
+a:visited {
+	color: #333;
+}
+.display_block {
+	display: block;
+}
+.sp {
+	display: none !important;
+}
+/*-------------------------------------------
+【1】header,footer
+--------------------------------------------*/
+header div, .container {
+	width: 100%;
+	padding: 0 14px;
+	margin: 0 auto;
+}
+header {
+	width: 100%;
+}
+header div {
+	display: block;
+}
+header div .logo {
+	width: 112px;
+	padding: 11px 0;
+}
+header div .logo img {
+  width: 100%;
+	margin-top: 0;
+}
+header div .medical_ttl{
+	font-size: 0.70em;
+	font-weight: bold;
+	line-height: 1.5;
+	text-align: center;
+	float: none;
+	padding: 5px 0 11px;
+	margin: 0;
+}
+header div div.group {
+  display: none;
+}
+footer {
+	width: 100%;
+	margin-top: 0;
+	padding: 20px 0;
+}
+footer .submenu{
+  margin: 0 0 15px;
+  clear: both;
+}
+footer .submenu ul {
+  text-align: center;
+  letter-spacing: -0.4em;
+  line-height: 0;
+}
+footer .submenu ul li {
+  line-height: 1;
+  letter-spacing: normal;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+footer .submenu ul li a {
+  color: #333;
+  font-size: 0.55em;
+  display: block;
+}
+footer .submenu ul li + li a {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: solid 1px #ccc;
+}
+footer p {
+	width: 100%;
+	padding: 0 10px;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	font-size: 14px;
+}
+footer p.copyright {
+  margin: 0;
+  font-size: 0.55em;
+  text-align: center;
+}
+footer p.back_btn a {
+	display: block;
+	position: fixed;
+	right: 5px;
+	bottom: 50px;
+	z-index: 3;
+	margin: 0;
+	padding: 10px 10px 10px 30px;
+	border: solid 1px #08107B;
+	font-size: 70%;
+	text-decoration: none;
+}
+footer p.back_btn a span {
+	display: inline-block;
+	position: relative;
+}
+footer p.back_btn a span:before {
+	position: absolute;
+	left: -15px;
+	top: 5px;
+	content: "";
+	display: block;
+	width: 7px;
+	height: 7px;
+	border-top: 2px solid #08107B;
+	border-right: 2px solid #08107B;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+footer p.back_btn a:hover {
+	opacity: 0.5;
+}
+/*-------------------------------------------
+【】link
+--------------------------------------------*/
+a.another_window:after {
+	width: 12px;
+	height: 12px;
+	margin-left: 5px;
+	background: url(../img/common/another_window_icon.png) no-repeat left center;
+	display: inline-block;
+	content: "";
+}
