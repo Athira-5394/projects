@@ -60,9 +60,9 @@ const DEF_USERNAME = 'ゲスト';    // 空文字列だった場合のユーザ�
 
 // データベースで使用するパラメータ
 const DBP_HOST     = '127.0.0.1';     // ホスト名
-const DBP_DBNAME   = 'nbi_lc';        // データベース名
-const DBP_ACCOUNT  = 'mnbi';          // ログインアカウント
-const DBP_PASSWORD = 'Fchi94Dr8o';    // ログインパスワード
+const DBP_DBNAME   = 'localdb';        // データベース名
+const DBP_ACCOUNT  = 'localdb';          // ログインアカウント
+const DBP_PASSWORD = 'localdb';    // ログインパスワード
 const DBP_TABLE    = 'userdata';      // テーブル名
 
 // データベースのカラム名
