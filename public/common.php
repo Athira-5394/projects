@@ -29,15 +29,15 @@ require __DIR__ . '/lib/database.php';
 
 // URL
 if (F_DEBUG) {
-    define('URL_SSOLOGIN' , 'https://dev.medicaltown.net/api/mnbisso?backurl=index.php');    // SSOログイン
-    define('URL_TOKENINFO', 'https://dev.medicaltown.net/api/mnbitoken?token=');             // IKEY_INFO取得
+    define('URL_SSOLOGIN' , 'https://laughing-space-garbanzo-7v4rqrjwg6j7crrqq-3000.app.github.dev/api/mnbisso?backurl=index.php');    // SSOログイン
+    define('URL_TOKENINFO', 'https://laughing-space-garbanzo-7v4rqrjwg6j7crrqq-3000.app.github.dev/api/mnbitoken?token=');             // IKEY_INFO取得
     define('URL_ERRORREF' , 'https://www.medicaltown.net/');                                 // エラー発生時の飛び先
-    define('URL_LOGOUT'   , 'https://dev.medicaltown.net/mnbi/');                            // ログアウトボタンのあるページ
+    define('URL_LOGOUT'   , 'https://laughing-space-garbanzo-7v4rqrjwg6j7crrqq-3000.app.github.dev/mnbi/');                            // ログアウトボタンのあるページ
 } else {
-    define('URL_SSOLOGIN' , 'https://dev.medicaltown.net/api/mnbisso?backurl=index.php');    // SSOログイン
-    define('URL_TOKENINFO', 'https://dev.medicaltown.net/api/mnbitoken?token=');             // IKEY_INFO取得
+    define('URL_SSOLOGIN' , 'https://laughing-space-garbanzo-7v4rqrjwg6j7crrqq-3000.app.github.dev/api/mnbisso?backurl=index.php');    // SSOログイン
+    define('URL_TOKENINFO', 'https://laughing-space-garbanzo-7v4rqrjwg6j7crrqq-3000.app.github.dev/api/mnbitoken?token=');             // IKEY_INFO取得
     define('URL_ERRORREF' , 'https://www.medicaltown.net/');                                 // エラー発生時の飛び先
-    define('URL_LOGOUT'   , 'https://dev.medicaltown.net/mnbi/');                            // ログアウトボタンのあるページ
+    define('URL_LOGOUT'   , 'https://laughing-space-garbanzo-7v4rqrjwg6j7crrqq-3000.app.github.dev/mnbi/');                            // ログアウトボタンのあるページ
 }
 
 // 各種キー

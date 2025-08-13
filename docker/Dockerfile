@@ -19,22 +19,22 @@ RUN apt-get update && apt-get install -y --allow-unauthenticated  \
     && docker-php-ext-install pdo pdo_mysql mbstring xml zip
  
 # Install Composer (compatible with PHP 7.0)
-COPY --from=composer:1 /usr/bin/composer /usr/bin/composer
+#COPY --from=composer:1 /usr/bin/composer /usr/bin/composer
 # Install Oil CLI globally
-RUN curl -L https://get.fuelphp.com/oil | sh
+# RUN curl -L https://get.fuelphp.com/oil | sh
  
 # Set working directory
 WORKDIR /var/www/html 
  
-COPY composer.json /var/www/html/
+#COPY composer.json /var/www/html/
 # COPY composer.lock /var/www/html/
  
-RUN composer install --no-interaction --prefer-dist --no-dev --optimize-autoloader 
+#RUN composer install --no-interaction --prefer-dist --no-dev --optimize-autoloader 
  
 # Apache configuration
 COPY webserver/apache2.conf /etc/apache2/apache2.conf
 COPY webserver/vhost.conf /etc/apache2/sites-available/000-default.conf
-COPY webserver/fuelapp.htaccess /var/www/html/fuel/.htaccess
+#COPY webserver/fuelapp.htaccess /var/www/html/fuel/.htaccess
 
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
