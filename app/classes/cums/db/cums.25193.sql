@@ -1,10 +1,3 @@
-SHOW CREATE TABLE t_content\G
-
-ALTER TABLE t_content
-MODIFY COLUMN `userid` varchar(256) NOT NULL COMMENT '棚卸担当者ユーザーID';
-
-UPDATE t_content
-SET userid = ''
-WHERE userid = '0';
-
-SHOW CREATE TABLE t_content\G
+version https://git-lfs.github.com/spec/v1
+oid sha256:36d7acb2e6b9910a3864a0b2950b4ee586a24418ab70c55090bd45dbe83630cc
+size 224
