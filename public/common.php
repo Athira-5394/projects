@@ -10,12 +10,12 @@
 
 // TRUEならデバッグモード
 define('F_DEBUG', file_exists(__DIR__ . '/lib/debug.php'));
-
 // 基本ライブラリ
 const MSG_DONTCOPY   = 'Do not save pics please.';                 // コピー不可の画像が操作されようとしたときに表示
 const FNAME_BUTTON   = 'button';                                   // フォームのボタン
 const FNAME_COMMAND  = 'command';                                  // フォームのコマンド
-define('LFILE_SYSERROR', __DIR__ . '/../stat/M-NBI_error.log');    // (リリース時のみ)エラー発生時にログを記録するファイル
+
+define('LFILE_SYSERROR', '/var/www/html/logs/M-NBI_error.log');    // (リリース時のみ)エラー発生時にログを記録するファイル
 require __DIR__ . '/lib/basiclib.php';
 
 // データベース
@@ -29,17 +29,16 @@ require __DIR__ . '/lib/database.php';
 
 // URL
 if (F_DEBUG) {
-    define('URL_SSOLOGIN' , 'https://laughing-space-garbanzo-7v4rqrjwg6j7crrqq-3000.app.github.dev/api/mnbisso?backurl=index.php');    // SSOログイン
-    define('URL_TOKENINFO', 'https://laughing-space-garbanzo-7v4rqrjwg6j7crrqq-3000.app.github.dev/api/mnbitoken?token=');             // IKEY_INFO取得
+    define('URL_SSOLOGIN' , 'https://dev.medicaltown.net/api/mnbisso?backurl=index.php');    // SSOログイン
+    define('URL_TOKENINFO', 'https://dev.medicaltown.net/api/mnbitoken?token=');             // IKEY_INFO取得
     define('URL_ERRORREF' , 'https://www.medicaltown.net/');                                 // エラー発生時の飛び先
-    define('URL_LOGOUT'   , 'https://laughing-space-garbanzo-7v4rqrjwg6j7crrqq-3000.app.github.dev/mnbi/');                            // ログアウトボタンのあるページ
+    define('URL_LOGOUT'   , 'https://dev.medicaltown.net/mnbi/');                            // ログアウトボタンのあるページ
 } else {
-    define('URL_SSOLOGIN' , 'https://laughing-space-garbanzo-7v4rqrjwg6j7crrqq-3000.app.github.dev/api/mnbisso?backurl=index.php');    // SSOログイン
-    define('URL_TOKENINFO', 'https://laughing-space-garbanzo-7v4rqrjwg6j7crrqq-3000.app.github.dev/api/mnbitoken?token=');             // IKEY_INFO取得
+    define('URL_SSOLOGIN' , 'https://dev.medicaltown.net/api/mnbisso?backurl=index.php');    // SSOログイン
+    define('URL_TOKENINFO', 'https://dev.medicaltown.net/api/mnbitoken?token=');             // IKEY_INFO取得
     define('URL_ERRORREF' , 'https://www.medicaltown.net/');                                 // エラー発生時の飛び先
-    define('URL_LOGOUT'   , 'https://laughing-space-garbanzo-7v4rqrjwg6j7crrqq-3000.app.github.dev/mnbi/');                            // ログアウトボタンのあるページ
+    define('URL_LOGOUT'   , 'https://dev.medicaltown.net/mnbi/');                            // ログアウトボタンのあるページ
 }
-
 // 各種キー
 const GKEY_TOKEN    = 'token';            // GETでトークンを要求するキー
 const IKEY_USERKEY  = 'TOKEN_INFO_01';    // トークンからユーザキーを取得するキー
@@ -58,12 +57,12 @@ const SKEY_SLIDE    = 'slide';            // (セッション変数)スライド
 // デフォルト文字列
 const DEF_USERNAME = 'ゲスト';    // 空文字列だった場合のユーザ名
 
-// データベースで使用するパラメータ
-const DBP_HOST     = '127.0.0.1';     // ホスト名
-const DBP_DBNAME   = 'nbi_lc';        // データベース名
-const DBP_ACCOUNT  = 'mnbi';          // ログインアカウント
-const DBP_PASSWORD = 'Fchi94Dr8o';    // ログインパスワード
-const DBP_TABLE    = 'userdata';      // テーブル名
+// // データベースで使用するパラメータ
+const DBP_HOST     = 'db';     // ホスト名
+const DBP_DBNAME   = 'localdb';        // データベース名
+const DBP_ACCOUNT  = 'localdb';          // ログインアカウント
+const DBP_PASSWORD = 'localdb';    // ログインパスワード
+const DBP_TABLE    = 'userdata';
 
 // データベースのカラム名
 const DBC_USERKEY = 'userkey';    // ユーザキー
@@ -500,19 +499,22 @@ function updateExamDataBase($db, $ixChapter, $ixPhase, $sContColumn, $sScoreColu
 // <戻り値> 成功ならデータベースハンドル、エラー発生ならエラー番号(MRC_～)
 function prepareUserData($bAllowDirect)
 {
+   
     // セッション開始
     session_start();
     // セッション中でもブラウザのキャッシュを有効に
     header('Expires:-1');
     header('Cache-Control:');
     header('Pragma:');
-    if (!OS_WINDOWS) {
+    if (OS_WINDOWS) {
+     
         // ユーザキーの有無を確認
         if (!isset($_SESSION[SKEY_USERKEY])) {
             if (!$bAllowDirect) {
                 // [セッション情報にユーザキーがないのにindex.php以外が参照された]index.phpへリダイレクト
                 $sRedirect = PFILE_HOME;
             } elseif (!isset($_GET[GKEY_TOKEN])) {
+                echo "test";
                 // [トークンがない]APIを呼び出す
                 $sRedirect = URL_SSOLOGIN;
             } else {
@@ -569,7 +571,8 @@ function prepareUserData($bAllowDirect)
         }
         // ユーザキーを取得
         $sUserKey = $_SESSION[SKEY_USERKEY];
-    } else {
+    } else { 
+       
         $sUserKey = 'testuserkey';
         $_SESSION[SKEY_USERNAME] = DEF_USERNAME;
     }

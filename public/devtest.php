@@ -1,6 +1,6 @@
 <?php
 $url = "https://laughing-space-garbanzo-7v4rqrjwg6j7crrqq-3000.app.github.dev/api/mnbitoken?token=5963e953d3616bc9c1c84369c318589c8a05d312";
-
+//$url = "https://ubiquitous-broccoli-4j9g4gp6x5q7c7x6j.github.dev/api/mnbitoken?token=5963e953d3616bc9c1c84369c318589c8a05d312";
 //cURLセッションを初期化する
 $ch = curl_init();
 
