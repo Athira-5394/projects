@@ -1,0 +1,9 @@
+[2025-08-15 19:58:46] (2) Use of undefined constant DBP_HOST - assumed 'DBP_HOST' (this will throw an Error in a future version of PHP) file:/var/www/html/public/common.php line:585
+[2025-08-15 19:58:46] (1) Uncaught ErrorException: ob_end_clean(): failed to delete buffer. No buffer to delete in /var/www/html/public/lib/basiclib.php:103
+Stack trace:
+#0 [internal function]: errorHandler(8, 'ob_end_clean():...', '/var/www/html/p...', 103, Array)
+#1 /var/www/html/public/lib/basiclib.php(103): ob_end_clean()
+#2 /var/www/html/public/lib/basiclib.php(274): CHtmlBuf->send()
+#3 /var/www/html/public/index.php(167): startMain('Home_main', 'putErrorMessage')
+#4 {main}
+  thrown file:/var/www/html/public/lib/basiclib.php line:103
