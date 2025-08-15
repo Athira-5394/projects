@@ -1,5 +1,50 @@
-[2025-08-15 19:58:46] (2) Use of undefined constant DBP_HOST - assumed 'DBP_HOST' (this will throw an Error in a future version of PHP) file:/var/www/html/public/common.php line:585
-[2025-08-15 19:58:46] (1) Uncaught ErrorException: ob_end_clean(): failed to delete buffer. No buffer to delete in /var/www/html/public/lib/basiclib.php:103
+[2025-08-15 20:49:09] (42) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'localdb.userdata' doesn't exist file:/var/www/html/public/lib/database.php line:160
+[2025-08-15 20:49:09] (1) Uncaught ErrorException: ob_end_clean(): failed to delete buffer. No buffer to delete in /var/www/html/public/lib/basiclib.php:103
+Stack trace:
+#0 [internal function]: errorHandler(8, 'ob_end_clean():...', '/var/www/html/p...', 103, Array)
+#1 /var/www/html/public/lib/basiclib.php(103): ob_end_clean()
+#2 /var/www/html/public/lib/basiclib.php(274): CHtmlBuf->send()
+#3 /var/www/html/public/index.php(167): startMain('Home_main', 'putErrorMessage')
+#4 {main}
+  thrown file:/var/www/html/public/lib/basiclib.php line:103
+[2025-08-15 21:05:56] (42) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'localdb.userdata' doesn't exist file:/var/www/html/public/lib/database.php line:160
+[2025-08-15 21:05:56] (1) Uncaught ErrorException: ob_end_clean(): failed to delete buffer. No buffer to delete in /var/www/html/public/lib/basiclib.php:103
+Stack trace:
+#0 [internal function]: errorHandler(8, 'ob_end_clean():...', '/var/www/html/p...', 103, Array)
+#1 /var/www/html/public/lib/basiclib.php(103): ob_end_clean()
+#2 /var/www/html/public/lib/basiclib.php(274): CHtmlBuf->send()
+#3 /var/www/html/public/index.php(167): startMain('Home_main', 'putErrorMessage')
+#4 {main}
+  thrown file:/var/www/html/public/lib/basiclib.php line:103
+[2025-08-15 21:06:18] (42) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'localdb.userdata' doesn't exist file:/var/www/html/public/lib/database.php line:160
+[2025-08-15 21:06:18] (1) Uncaught ErrorException: ob_end_clean(): failed to delete buffer. No buffer to delete in /var/www/html/public/lib/basiclib.php:103
+Stack trace:
+#0 [internal function]: errorHandler(8, 'ob_end_clean():...', '/var/www/html/p...', 103, Array)
+#1 /var/www/html/public/lib/basiclib.php(103): ob_end_clean()
+#2 /var/www/html/public/lib/basiclib.php(274): CHtmlBuf->send()
+#3 /var/www/html/public/index.php(167): startMain('Home_main', 'putErrorMessage')
+#4 {main}
+  thrown file:/var/www/html/public/lib/basiclib.php line:103
+[2025-08-15 21:07:24] (42) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'localdb.userdata' doesn't exist file:/var/www/html/public/lib/database.php line:160
+[2025-08-15 21:07:24] (1) Uncaught ErrorException: ob_end_clean(): failed to delete buffer. No buffer to delete in /var/www/html/public/lib/basiclib.php:103
+Stack trace:
+#0 [internal function]: errorHandler(8, 'ob_end_clean():...', '/var/www/html/p...', 103, Array)
+#1 /var/www/html/public/lib/basiclib.php(103): ob_end_clean()
+#2 /var/www/html/public/lib/basiclib.php(274): CHtmlBuf->send()
+#3 /var/www/html/public/index.php(167): startMain('Home_main', 'putErrorMessage')
+#4 {main}
+  thrown file:/var/www/html/public/lib/basiclib.php line:103
+[2025-08-15 21:07:28] (42) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'localdb.userdata' doesn't exist file:/var/www/html/public/lib/database.php line:160
+[2025-08-15 21:07:28] (1) Uncaught ErrorException: ob_end_clean(): failed to delete buffer. No buffer to delete in /var/www/html/public/lib/basiclib.php:103
+Stack trace:
+#0 [internal function]: errorHandler(8, 'ob_end_clean():...', '/var/www/html/p...', 103, Array)
+#1 /var/www/html/public/lib/basiclib.php(103): ob_end_clean()
+#2 /var/www/html/public/lib/basiclib.php(274): CHtmlBuf->send()
+#3 /var/www/html/public/index.php(167): startMain('Home_main', 'putErrorMessage')
+#4 {main}
+  thrown file:/var/www/html/public/lib/basiclib.php line:103
+[2025-08-15 21:07:29] (42) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'localdb.userdata' doesn't exist file:/var/www/html/public/lib/database.php line:160
+[2025-08-15 21:07:29] (1) Uncaught ErrorException: ob_end_clean(): failed to delete buffer. No buffer to delete in /var/www/html/public/lib/basiclib.php:103
 Stack trace:
 #0 [internal function]: errorHandler(8, 'ob_end_clean():...', '/var/www/html/p...', 103, Array)
 #1 /var/www/html/public/lib/basiclib.php(103): ob_end_clean()
