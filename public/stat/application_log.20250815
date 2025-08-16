@@ -1,0 +1,22 @@
+<?php defined('COREPATH') or exit('No direct script access allowed'); ?>
+
+ERROR - 2025-08-16 03:14:09 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:09 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:09 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:09 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:09 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:09 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:09 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:09 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:09 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:09 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:09 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:09 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:09 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:09 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:10 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:10 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:10 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:10 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:10 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336
+ERROR - 2025-08-16 03:14:10 --> Warning - include(/var/www/html/fuel/packages/captcha/bootstrap.php): failed to open stream: No such file or directory in /var/www/html/fuel/core/classes/fuel.php on line 336

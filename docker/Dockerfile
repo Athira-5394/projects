@@ -20,11 +20,16 @@ COPY --from=composer:2.8 /usr/bin/composer /usr/bin/composer
 # Install Oil CLI globally
 RUN curl -L https://get.fuelphp.com/oil | sh
 
+# Install Carl Craig Captcha package
+RUN git clone https://github.com/carlcraig/fuel-captcha.git fuel/packages/captcha
+
 # Set working directory
 WORKDIR /var/www/html
 
 # Install FuelPHP
-RUN composer create-project fuel/fuel:1.8.1 . --no-install --remove-vcs
+RUN composer create-project fuel/fuel:1.8.0 . --remove-vcs
+
+#RUN composer create-project fuel/fuel:1.8.1 . --no-install --remove-vcs
 
 COPY composer.json /var/www/html/
 COPY composer.lock /var/www/html/

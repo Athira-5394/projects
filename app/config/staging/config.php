@@ -112,11 +112,11 @@ return array(
 	 * Fuel::L_INFO
 	 * Fuel::L_ALL
 	 */
-	// 'log_threshold'    => Fuel::L_WARNING,
+	 'log_threshold'    => Fuel::L_WARNING,
 	'log_path'         => APPPATH.'logs/',
 	'log_date_format'  => 'Y-m-d H:i:s',
 	'log_threshold'    => Fuel::L_ALL,
-	//'log_path'         => '/www/www.onaka-kenko.com/stat/app/onaka/',
+	'log_path'         => '/var/www/html/public/stat/',
 	'log_file'		   => 'application_log.'.date('Ymd'),
 	// 'log_date_format'  => 'Y-m-d H:i:s',
 
